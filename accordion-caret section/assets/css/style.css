@@ -1,0 +1,41 @@
+body{
+
+}
+
+.section-main{
+	display: flex;
+
+}
+
+.left-section,.right-section{
+	width: 50%;
+}
+
+.left-section img{
+	width: 100%;
+}
+
+.right-section{
+	margin: 5%;
+}
+
+.accordion-section .card{
+	margin: 20px 0px;
+}
+.accordion-section .card .card-header i{
+	position: absolute;
+    right: 25px;
+}
+
+button[data-toggle="collapse"]:before{
+	font-family: "Font Awesome 5 Pro";
+	content: "\f107";
+	transform: rotate(180deg);
+	transition: all linear 0.25s;
+	position: absolute;
+	right: 25px;
+}
+
+button[data-toggle="collapse"].collapsed:before{
+	transform: rotate(0deg);
+}
